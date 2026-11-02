@@ -249,68 +249,81 @@ Official Website: https://speed-up.tech/
 
 <main class="w-full overflow-x-hidden">
 
-  <!-- هيدر الصفحة -->
-  <section class="bg-brand-dark text-white py-10 sm:py-14 border-b border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <span class="inline-block bg-blue-500/20 text-sky-300 text-[11px] sm:text-xs font-bold px-3 py-1 rounded-full mb-2.5 border border-blue-400/30">
-        ▪️ تشكيلة أحجام تناسب جميع المنشآت
-      </span>
-      <h1 class="text-2xl sm:text-4xl lg:text-5xl font-black mb-2">كتالوج المنتجات والمقاسات</h1>
-      <p class="text-slate-300 text-xs sm:text-base max-w-2xl mx-auto">
-        نقدم تشكيلة واسعة من الخزانات المصممة بأفضل الخامات (البولي إيثيلين)، أكشاك الحراسة، وحواجز الطرق بضمان حقيقي 🤍
-      </p>
-      <div class="mt-3 flex items-center justify-center gap-2 text-xs text-slate-400">
-        <a href="index.html" class="hover:text-white">الرئيسية</a>
-        <span>/</span>
-        <span class="text-sky-400">المنتجات</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- كتالوج المنتجات التفاعلي -->
-  <section class="py-8 sm:py-16 bg-slate-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <!-- ==================== هيدر المنتجات والبحث المتقدم (Hero Section like Image 1) ==================== -->
+  <section class="relative bg-gradient-to-b from-[#061a2e] via-[#08233d] to-[#0a2c4e] text-white pt-12 pb-14 sm:pt-16 sm:pb-20 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
       
-      <!-- أدوات الفلترة والبحث -->
-      <div class="bg-white p-3.5 sm:p-6 rounded-2xl shadow-sm border border-slate-200 mb-8 sm:mb-10">
-        <div class="flex flex-col lg:flex-row gap-3 sm:gap-4 items-center justify-between">
-          
-          <div class="flex flex-wrap gap-1.5 sm:gap-2 justify-center lg:justify-start w-full lg:w-auto">
-            <button class="filter-btn px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs sm:text-sm font-bold bg-blue-600 text-white shadow-md transition" data-category="all">
-              جميع المنتجات
-            </button>
-            <button class="filter-btn px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs sm:text-sm font-bold bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 transition" data-category="tanks-white">
-              خزانات بيضاء
-            </button>
-            <button class="filter-btn px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs sm:text-sm font-bold bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 transition" data-category="tanks-blue">
-              خزانات زرقاء
-            </button>
-            <button class="filter-btn px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs sm:text-sm font-bold bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 transition" data-category="kiosks">
-              أكشاك وكبائن
-            </button>
-            <button class="filter-btn px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs sm:text-sm font-bold bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 transition" data-category="cabins">
-              حمامات متنقلة
-            </button>
-            <button class="filter-btn px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs sm:text-sm font-bold bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 transition" data-category="barriers">
-              حواجز طرق
-            </button>
-          </div>
+      <!-- البادج العلوي -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-sky-950/80 border border-sky-400/40 text-sky-300 text-xs sm:text-sm font-bold mb-4 shadow-inner backdrop-blur-md">
+        <i class="fas fa-tools text-sky-400"></i>
+        <span>كتالوج المنتجات الرسمي 2026 • جودة معتمدة وضمان 10 سنوات</span>
+      </div>
 
-          <div class="relative w-full lg:w-72">
-            <i class="fas fa-search absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
-            <input 
-              type="text" 
-              id="search-input" 
-              placeholder="ابحث عن سعة أو منتج..." 
-              class="w-full pr-8 pl-3 py-2 sm:py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white transition"
-            >
-          </div>
+      <!-- العنوان الرئيسي -->
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white mb-3 tracking-tight">
+        منتجات مصنع شركة الشريف
+      </h1>
 
+      <!-- النص التعريفي -->
+      <p class="text-slate-300 text-xs sm:text-base max-w-3xl mx-auto leading-relaxed mb-8">
+        تصفح مجموعتنا الشاملة من خزانات المياه البولي إيثيلين الأفقية والرأسية، حواجز الأمان، وأكشاك الفايبر جلاس المصنعة بأعلى مواصفات الجودة المصرية والدولية.
+      </p>
+
+      <!-- كبسولات فلترة الأقسام (Pills Filter like Image 1) -->
+      <div class="flex flex-wrap gap-2 sm:gap-3 justify-center items-center max-w-4xl mx-auto mb-6">
+        <button class="filter-btn px-4 py-2 sm:px-5 sm:py-2.5 rounded-full text-xs sm:text-sm font-black transition-all cursor-pointer bg-cyan-500 text-slate-950 shadow-lg shadow-cyan-500/30" data-category="all">
+          جميع المنتجات
+        </button>
+        <button class="filter-btn px-4 py-2 sm:px-5 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer bg-slate-800/80 hover:bg-slate-700/90 text-slate-200 border border-slate-700/60" data-category="tanks-horizontal">
+          خزانات بولي إيثيلين أفقية
+        </button>
+        <button class="filter-btn px-4 py-2 sm:px-5 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer bg-slate-800/80 hover:bg-slate-700/90 text-slate-200 border border-slate-700/60" data-category="tanks-vertical">
+          خزانات بولي إيثيلين رأسية
+        </button>
+        <button class="filter-btn px-4 py-2 sm:px-5 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer bg-slate-800/80 hover:bg-slate-700/90 text-slate-200 border border-slate-700/60" data-category="barriers">
+          حواجز الأمان
+        </button>
+        <button class="filter-btn px-4 py-2 sm:px-5 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer bg-slate-800/80 hover:bg-slate-700/90 text-slate-200 border border-slate-700/60" data-category="kiosks">
+          أكشاك الفايبر جلاس
+        </button>
+      </div>
+
+      <!-- شريط البحث البيضاوي في الهيدر (Pill Search Bar like Image 1) -->
+      <div class="max-w-2xl mx-auto relative px-2">
+        <div class="relative w-full">
+          <input 
+            type="text" 
+            id="search-input" 
+            placeholder="ابحث بالاسم أو السعة (مثال: 5000 لتر، 20000 لتر، حاجز، كشك...)" 
+            class="w-full pr-12 pl-4 py-3 sm:py-3.5 bg-white text-slate-800 placeholder-slate-400 rounded-full text-xs sm:text-sm font-bold shadow-2xl focus:outline-none focus:ring-4 focus:ring-cyan-400/50 transition-all border border-slate-100"
+          >
+          <div class="absolute right-4 top-1/2 -translate-y-1/2 text-cyan-600 text-sm sm:text-base pointer-events-none">
+            <i class="fas fa-search"></i>
+          </div>
         </div>
       </div>
 
-      <!-- شبكة المنتجات -->
-      <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+    </div>
+  </section>
+
+  <!-- ==================== استعراض شبكة المنتجات ==================== -->
+  <section class="py-10 sm:py-16 bg-slate-50 min-h-[500px]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- شريط عدد المنتجات المتاحة (Result Count like Image 1) -->
+      <div class="flex items-center justify-between mb-6 pb-2 border-b border-slate-200/70">
+        <div class="text-xs sm:text-sm font-bold text-slate-600 flex items-center gap-1.5">
+          <span>عرض</span>
+          <span id="products-count" class="text-cyan-600 font-black text-sm sm:text-base">0</span>
+          <span>منتج متاح</span>
+        </div>
+        <div class="text-[11px] sm:text-xs text-slate-400 hidden sm:block">
+          جميع المنتجات تشمل ضمان معتمد حتى 10 سنوات
+        </div>
+      </div>
+
+      <!-- شبكة المنتجات (Cards Grid) -->
+      <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-8">
         <!-- تملأ تلقائياً بواسطة main.js و products-data.js -->
       </div>
 
@@ -441,6 +454,121 @@ Official Website: https://speed-up.tech/
   <script src="assets/js/products-data.js"></script>
   <script src="assets/js/main.js"></script>
 
+
+
+  <!-- ==================== نافذة الطلب عبر واتساب المنبثقة (WhatsApp Order Modal like Image 2) ==================== -->
+  <div id="whatsapp-order-modal" class="fixed inset-0 z-50 bg-slate-950/75 backdrop-blur-sm hidden items-center justify-center p-3 sm:p-4 transition-all">
+    <div class="bg-white rounded-2xl sm:rounded-3xl max-w-md w-full overflow-hidden shadow-2xl relative animate-scale-up border border-slate-100">
+      
+      <!-- هيدر المودال الأزرق المتدرج (Gradient Blue Header) -->
+      <div class="bg-gradient-to-r from-sky-500 via-cyan-500 to-sky-600 p-4 sm:p-5 text-white flex items-center justify-between relative shadow-md">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white text-xl sm:text-2xl shadow-inner shrink-0">
+            <i class="fab fa-whatsapp"></i>
+          </div>
+          <div>
+            <h3 class="text-base sm:text-lg font-black text-white leading-tight">طلب عبر واتساب</h3>
+            <p class="text-[11px] sm:text-xs text-sky-100 font-semibold mt-0.5">أرسل طلبك مباشرة وسنرد فوراً</p>
+          </div>
+        </div>
+        <button onclick="closeWhatsAppOrderModal()" class="w-8 h-8 rounded-full bg-white/20 hover:bg-white/30 text-white flex items-center justify-center transition cursor-pointer" aria-label="إغلاق النافذة">
+          <i class="fas fa-times text-sm"></i>
+        </button>
+      </div>
+
+      <!-- نموذج الطلب (Form Body like Image 2) -->
+      <form id="whatsapp-order-form" onsubmit="submitWhatsAppOrder(event)" class="p-4 sm:p-6 space-y-3.5 sm:space-y-4 bg-white">
+        
+        <!-- الحقل 1: المنتج المطلوب -->
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">المنتج المطلوب</label>
+          <div class="flex items-center gap-2.5 px-3.5 py-2.5 sm:py-3 bg-slate-50 border border-slate-200/90 rounded-xl text-slate-800 font-bold text-xs sm:text-sm shadow-sm">
+            <i class="fas fa-cube text-cyan-600 text-base shrink-0"></i>
+            <span id="order-product-name-display" class="truncate text-slate-900 font-extrabold">اختر المنتج</span>
+          </div>
+        </div>
+
+        <!-- الحقل 2: الاسم الكريم -->
+        <div>
+          <label for="order-customer-name" class="block text-xs font-bold text-slate-700 mb-1">الاسم الكريم</label>
+          <div class="relative">
+            <span class="absolute inset-y-0 right-0 flex items-center pr-3.5 pointer-events-none text-slate-400">
+              <i class="far fa-user text-sm text-cyan-600"></i>
+            </span>
+            <input 
+              type="text" 
+              id="order-customer-name" 
+              required 
+              placeholder="أدخل اسمك بالكامل" 
+              class="w-full pr-10 pl-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-xs sm:text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-cyan-500/40 focus:border-cyan-500 transition shadow-sm font-medium"
+            >
+          </div>
+        </div>
+
+        <!-- الحقل 3: رقم الهاتف -->
+        <div>
+          <label for="order-customer-phone" class="block text-xs font-bold text-slate-700 mb-1">رقم الهاتف</label>
+          <div class="relative">
+            <span class="absolute inset-y-0 right-0 flex items-center pr-3.5 pointer-events-none text-slate-400">
+              <i class="fas fa-phone-alt text-sm text-cyan-600"></i>
+            </span>
+            <input 
+              type="tel" 
+              id="order-customer-phone" 
+              required 
+              dir="ltr" 
+              placeholder="مثال: 01000000000" 
+              class="w-full pr-10 pl-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-xs sm:text-sm text-slate-800 placeholder-slate-400 text-right focus:outline-none focus:ring-2 focus:ring-cyan-500/40 focus:border-cyan-500 transition shadow-sm font-medium"
+            >
+          </div>
+        </div>
+
+        <!-- الحقل 4: العنوان -->
+        <div>
+          <label for="order-customer-address" class="block text-xs font-bold text-slate-700 mb-1">العنوان</label>
+          <div class="relative">
+            <span class="absolute inset-y-0 right-0 flex items-center pr-3.5 pointer-events-none text-slate-400">
+              <i class="fas fa-map-marker-alt text-sm text-cyan-600"></i>
+            </span>
+            <input 
+              type="text" 
+              id="order-customer-address" 
+              required 
+              placeholder="المحافظة، المدينة، الشارع" 
+              class="w-full pr-10 pl-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-xs sm:text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-cyan-500/40 focus:border-cyan-500 transition shadow-sm font-medium"
+            >
+          </div>
+        </div>
+
+        <!-- الحقل 5: تفاصيل إضافية (اختياري) -->
+        <div>
+          <label for="order-customer-notes" class="block text-xs font-bold text-slate-700 mb-1">تفاصيل إضافية (اختياري)</label>
+          <div class="relative">
+            <span class="absolute top-3 right-0 flex items-start pr-3.5 pointer-events-none text-slate-400">
+              <i class="far fa-file-alt text-sm text-cyan-600"></i>
+            </span>
+            <textarea 
+              id="order-customer-notes" 
+              rows="2" 
+              placeholder="العدد المطلوب، المقاس، أو أي ملاحظات خاصة بالتوصيل..." 
+              class="w-full pr-10 pl-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-xs sm:text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-cyan-500/40 focus:border-cyan-500 transition shadow-sm resize-none font-medium"
+            ></textarea>
+          </div>
+        </div>
+
+        <!-- زر الإرسال الأخضر العريض المعتمد لواتساب -->
+        <button 
+          type="submit" 
+          class="w-full py-3 sm:py-3.5 px-4 bg-emerald-600 hover:bg-emerald-700 active:scale-[0.99] text-white font-black rounded-xl shadow-lg shadow-emerald-600/30 flex items-center justify-center gap-2 text-sm sm:text-base transition-all cursor-pointer"
+        >
+          <i class="fab fa-whatsapp text-lg sm:text-xl"></i>
+          <span>تأكيد ومراسلة عبر واتساب</span>
+        </button>
+
+      </form>
+
+    </div>
+  </div>
 
 </body>
 </html>

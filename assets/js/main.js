@@ -17,6 +17,7 @@ const OFFICIAL_PHONE = "01011380713";
 
 let currentCategory = "all";
 let searchQuery = "";
+let currentOrderProduct = null;
 
 document.addEventListener("DOMContentLoaded", () => {
   renderProducts();
@@ -57,15 +58,21 @@ function renderProducts() {
     return matchCategory && matchSearch;
   });
 
+  // تحديث عداد المنتجات المعروضة
+  const countEl = document.getElementById("products-count");
+  if (countEl) {
+    countEl.textContent = filtered.length;
+  }
+
   if (filtered.length === 0) {
     container.innerHTML = `
       <div class="col-span-full text-center py-12 sm:py-16 bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm">
-        <div class="w-12 h-12 sm:w-16 sm:h-16 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-3 text-xl sm:text-2xl">
+        <div class="w-12 h-12 sm:w-16 sm:h-16 bg-blue-50 text-cyan-600 rounded-full flex items-center justify-center mx-auto mb-3 text-xl sm:text-2xl">
           <i class="fas fa-search"></i>
         </div>
         <h4 class="text-base sm:text-xl font-bold text-slate-800 mb-1">لم نعثر على نتائج تطابق بحثك</h4>
-        <p class="text-slate-500 text-xs sm:text-sm mb-4">جرب البحث بكلمات أخرى مثل "خزان"، "3000"، "كشك"، أو "حاجز".</p>
-        <button onclick="resetFilters()" class="px-5 py-2 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition text-xs sm:text-sm">
+        <p class="text-slate-500 text-xs sm:text-sm mb-4">جرب البحث بكلمات أخرى مثل "خزان"، "أفقي"، "3000"، "كشك"، أو "حاجز".</p>
+        <button onclick="resetFilters()" class="px-5 py-2 bg-cyan-600 text-white font-semibold rounded-xl hover:bg-cyan-700 transition text-xs sm:text-sm">
           عرض جميع المنتجات
         </button>
       </div>
@@ -74,25 +81,21 @@ function renderProducts() {
   }
 
   container.innerHTML = filtered.map(product => {
-    const whatsappMsg = encodeURIComponent(
-      `السلام عليكم ورحمة الله، أود الاستفسار وطلب حجز لمنتج: ${product.name} (${product.capacity}) من شركة الشريف للخزانات.`
-    );
-
     return `
-      <div class="product-card bg-white rounded-2xl overflow-hidden shadow-sm flex flex-col group border border-slate-200 hover:shadow-md transition">
+      <div class="product-card bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group border border-slate-200/80">
         
-        <!-- شارات المنتج العلوية (منفصلة تماماً في صف مخصص لضمان وضوح كامل النص بدون أي حجب) -->
-        <div class="px-3.5 pt-3.5 pb-1 flex items-center justify-between gap-2 z-10 bg-white">
-          <span class="bg-blue-600 text-white text-[10px] sm:text-xs font-bold px-2.5 py-1 rounded-full shadow-sm leading-none">
+        <!-- شارات المنتج العلوية الراقية (مطابقة للتصميم المرجعي) -->
+        <div class="px-4 pt-4 pb-1 flex items-center justify-between gap-2 z-10 bg-white">
+          <span class="inline-block px-3 py-1 rounded-full text-[11px] sm:text-xs font-black shadow-xs bg-amber-50 text-amber-800 border border-amber-200/60 leading-none">
             ${product.badge}
           </span>
-          <span class="bg-slate-800 text-white text-[10px] sm:text-xs font-bold px-2 py-1 rounded-md shrink-0 leading-none">
+          <span class="bg-slate-900 text-white text-[10px] sm:text-xs font-bold px-2.5 py-1 rounded-lg shrink-0 leading-none">
             ${product.capacity}
           </span>
         </div>
 
         <!-- مساحة صورة المنتج المتناسقة -->
-        <div class="product-img-wrapper relative p-3 sm:p-5 flex items-center justify-center min-h-[180px] sm:min-h-[220px] border-b border-slate-100 bg-white">
+        <div class="product-img-wrapper relative p-4 sm:p-6 flex items-center justify-center min-h-[190px] sm:min-h-[220px] border-b border-slate-100 bg-white">
           <img 
             src="${product.image}" 
             alt="${product.name}" 
@@ -101,11 +104,11 @@ function renderProducts() {
           >
         </div>
 
-        <!-- محتوى البطاقة المتجاوب -->
+        <!-- محتوى البطاقة والمواصفات -->
         <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between">
           <div>
-            <div class="text-[11px] text-blue-600 font-bold mb-0.5">${product.categoryName}</div>
-            <h3 class="text-sm sm:text-base font-extrabold text-slate-800 mb-1.5 leading-snug group-hover:text-blue-600 transition-colors">
+            <div class="text-[11px] text-cyan-600 font-extrabold mb-1">${product.categoryName}</div>
+            <h3 class="text-sm sm:text-base font-black text-slate-900 mb-1.5 leading-snug group-hover:text-cyan-600 transition-colors">
               ${product.name}
             </h3>
             
@@ -116,33 +119,34 @@ function renderProducts() {
             <!-- المزايا السريعة -->
             <div class="space-y-1 mb-4 text-[11px] sm:text-xs text-slate-600 border-t border-slate-100 pt-2.5">
               <div class="flex items-center gap-1.5">
-                <i class="fas fa-shield-alt text-amber-500 text-[10px]"></i>
+                <i class="fas fa-shield-alt text-amber-500 text-[11px]"></i>
                 <span>${product.warranty}</span>
               </div>
               <div class="flex items-center gap-1.5">
-                <i class="fas fa-layer-group text-blue-500 text-[10px]"></i>
+                <i class="fas fa-layer-group text-blue-500 text-[11px]"></i>
                 <span class="truncate">${product.type}</span>
               </div>
             </div>
           </div>
 
-          <!-- الأزرار المتجاوبة -->
-          <div class="grid grid-cols-2 gap-2 pt-2 border-t border-slate-100">
+          <!-- الأزرار: زر المواصفات وزر طلب منتج الذي يفتح فورم الواتساب فوراً -->
+          <div class="pt-2 border-t border-slate-100 flex items-center gap-2">
             <button 
               onclick="openProductModal('${product.id}')" 
-              class="w-full py-2 px-2 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl text-xs font-bold flex items-center justify-center gap-1 transition cursor-pointer"
+              class="py-2.5 px-3 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 transition cursor-pointer"
+              title="عرض المواصفات الفنية الكاملة"
             >
               <i class="fas fa-eye text-blue-600 text-xs"></i>
-              <span>المواصفات</span>
+              <span class="hidden xs:inline">المواصفات</span>
             </button>
-            <a 
-              href="https://wa.me/${OFFICIAL_WHATSAPP}?text=${whatsappMsg}" 
-              target="_blank" 
-              class="w-full py-2 px-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold flex items-center justify-center gap-1 shadow-sm transition"
+            
+            <button 
+              onclick="openWhatsAppOrderModal('${product.id}')" 
+              class="flex-1 py-2.5 px-3 bg-emerald-600 hover:bg-emerald-700 active:scale-[0.99] text-white rounded-xl text-xs sm:text-sm font-black flex items-center justify-center gap-2 shadow-md shadow-emerald-600/20 transition-all cursor-pointer"
             >
-              <i class="fab fa-whatsapp text-sm"></i>
-              <span>طلب تسعير</span>
-            </a>
+              <i class="fab fa-whatsapp text-sm sm:text-base"></i>
+              <span>طلب منتج</span>
+            </button>
           </div>
         </div>
       </div>
@@ -219,7 +223,7 @@ function openProductModal(productId) {
             <span>اطلب عبر واتساب</span>
           </a>
           <button 
-            onclick="prefillQuoteModal('${product.name}', '${product.capacity}')" 
+            onclick="openWhatsAppOrderModal('${product.id}')" 
             class="w-full sm:w-auto py-2.5 px-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl text-center flex items-center justify-center gap-1.5 text-xs transition cursor-pointer"
           >
             <i class="fas fa-file-invoice-dollar"></i>
@@ -243,17 +247,88 @@ function closeProductModal() {
   document.body.style.overflow = "";
 }
 
+
+// ==================== وظائف نافذة طلب عبر واتساب (WhatsApp Order Modal) ====================
+function openWhatsAppOrderModal(productId) {
+  const product = alsharifProducts.find(p => p.id === productId);
+  if (!product) return;
+  currentOrderProduct = product;
+
+  // إغلاق مودال المواصفات إن كان مفتوحاً
+  closeProductModal();
+
+  const nameDisplay = document.getElementById("order-product-name-display");
+  if (nameDisplay) {
+    nameDisplay.textContent = `${product.name} (${product.capacity})`;
+  }
+
+  const modal = document.getElementById("whatsapp-order-modal");
+  if (modal) {
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+    document.body.style.overflow = "hidden";
+  }
+}
+
+function closeWhatsAppOrderModal() {
+  const modal = document.getElementById("whatsapp-order-modal");
+  if (!modal) return;
+  modal.classList.add("hidden");
+  modal.classList.remove("flex");
+  document.body.style.overflow = "";
+}
+
+function submitWhatsAppOrder(event) {
+  event.preventDefault();
+  
+  const nameInput = document.getElementById("order-customer-name");
+  const phoneInput = document.getElementById("order-customer-phone");
+  const addressInput = document.getElementById("order-customer-address");
+  const notesInput = document.getElementById("order-customer-notes");
+
+  const name = nameInput ? nameInput.value.trim() : "";
+  const phone = phoneInput ? phoneInput.value.trim() : "";
+  const address = addressInput ? addressInput.value.trim() : "";
+  const notes = notesInput ? notesInput.value.trim() : "";
+  const prodName = currentOrderProduct ? `${currentOrderProduct.name} (${currentOrderProduct.capacity})` : "خزان مياه من شركة الشريف";
+
+  if (!name || !phone || !address) {
+    alert("يرجى إدخال الاسم ورقم الهاتف والعنوان لتأكيد طلبك.");
+    return;
+  }
+
+  // صياغة رسالة الواتساب الرسمية الاحترافية
+  let msg = `السلام عليكم ورحمة الله وبركاته،\n` +
+    `أرغب في تأكيد طلب منتج من شركة الشريف للخزانات:\n\n` +
+    `📦 *المنتج المطلوب:* ${prodName}\n` +
+    `👤 *الاسم الكريم:* ${name}\n` +
+    `📞 *رقم الهاتف:* ${phone}\n` +
+    `📍 *العنوان:* ${address}\n`;
+
+  if (notes) {
+    msg += `📝 *تفاصيل إضافية:* ${notes}\n`;
+  }
+  msg += `\nبرجاء موافاتي بالسعر النهائي وموعد التوريد المتاح. شكراً لكم.`;
+
+  const waUrl = `https://wa.me/${OFFICIAL_WHATSAPP}?text=${encodeURIComponent(msg)}`;
+  window.open(waUrl, "_blank");
+
+  // إعادة ضبط النموذج وإغلاق النافذة
+  if (notesInput) notesInput.value = "";
+  closeWhatsAppOrderModal();
+}
+
 // إعداد أحداث الفلترة والبحث
 function setupEventListeners() {
   const filterBtns = document.querySelectorAll(".filter-btn");
   filterBtns.forEach(btn => {
     btn.addEventListener("click", () => {
       filterBtns.forEach(b => {
-        b.classList.remove("bg-blue-600", "text-white", "shadow-md");
-        b.classList.add("bg-white", "text-slate-700", "border", "border-slate-200");
+        b.classList.remove("bg-cyan-500", "text-slate-950", "shadow-lg", "shadow-cyan-500/30", "font-black");
+        b.classList.add("bg-slate-800/80", "hover:bg-slate-700/90", "text-slate-200", "border", "border-slate-700/60", "font-bold");
       });
-      btn.classList.add("bg-blue-600", "text-white", "shadow-md");
-      btn.classList.remove("bg-white", "text-slate-700", "border", "border-slate-200");
+      btn.classList.add("bg-cyan-500", "text-slate-950", "shadow-lg", "shadow-cyan-500/30", "font-black");
+      btn.classList.remove("bg-slate-800/80", "hover:bg-slate-700/90", "text-slate-200", "border", "border-slate-700/60", "font-bold");
 
       currentCategory = btn.getAttribute("data-category");
       renderProducts();
@@ -265,6 +340,16 @@ function setupEventListeners() {
     searchInput.addEventListener("input", (e) => {
       searchQuery = e.target.value.trim();
       renderProducts();
+    });
+  }
+
+  // إغلاق مودال الواتساب عند النقر بالخارج
+  const waModal = document.getElementById("whatsapp-order-modal");
+  if (waModal) {
+    waModal.addEventListener("click", (e) => {
+      if (e.target === waModal) {
+        closeWhatsAppOrderModal();
+      }
     });
   }
 
