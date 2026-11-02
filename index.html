@@ -385,33 +385,48 @@ Official Website: https://speed-up.tech/
       </div>
     </section>
 
-    <!-- ==================== شريط الأرقام والإنجازات ==================== -->
-    <section class="py-8 sm:py-10 bg-slate-50 border-b border-slate-200">
+    <!-- ==================== شريط الأرقام والإنجازات التفاعلي الديناميكي ==================== -->
+    <section id="stats-section" class="py-10 sm:py-14 bg-gradient-to-b from-slate-50 to-slate-100/70 border-b border-slate-200/80">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 text-center">
 
-          <div class="p-4 sm:p-6 bg-white rounded-xl sm:rounded-2xl shadow-sm border border-slate-150">
-            <div class="text-2xl sm:text-4xl font-black text-blue-600 mb-1">+20</div>
-            <div class="text-xs sm:text-sm font-bold text-slate-700">عاماً من الخبرة</div>
-            <p class="text-[10px] sm:text-xs text-slate-400 mt-0.5">تطوير مستمر</p>
+          <!-- 20+ عاماً من الخبرة -->
+          <div class="stat-card p-4 sm:p-6 bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-lg border border-slate-200/80 transition-all duration-300 transform hover:-translate-y-1 group">
+            <div class="text-2xl sm:text-4xl lg:text-5xl font-black text-blue-600 mb-1.5 flex items-center justify-center gap-0.5 tracking-tight group-hover:scale-105 transition-transform" dir="ltr">
+              <span class="text-cyan-500 font-extrabold">+</span>
+              <span class="counter-value" data-target="20">0</span>
+            </div>
+            <div class="text-xs sm:text-sm font-extrabold text-slate-800">عاماً من الخبرة</div>
+            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 font-medium">تطوير مستمر</p>
           </div>
 
-          <div class="p-4 sm:p-6 bg-white rounded-xl sm:rounded-2xl shadow-sm border border-slate-150">
-            <div class="text-2xl sm:text-4xl font-black text-blue-600 mb-1">+50,000</div>
-            <div class="text-xs sm:text-sm font-bold text-slate-700">عميل ومشروع</div>
-            <p class="text-[10px] sm:text-xs text-slate-400 mt-0.5">ثقة كبرى الشركات</p>
+          <!-- +50,000 عميل ومشروع -->
+          <div class="stat-card p-4 sm:p-6 bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-lg border border-slate-200/80 transition-all duration-300 transform hover:-translate-y-1 group">
+            <div class="text-2xl sm:text-4xl lg:text-5xl font-black text-blue-600 mb-1.5 flex items-center justify-center gap-0.5 tracking-tight group-hover:scale-105 transition-transform" dir="ltr">
+              <span class="text-cyan-500 font-extrabold">+</span>
+              <span class="counter-value" data-target="50000">0</span>
+            </div>
+            <div class="text-xs sm:text-sm font-extrabold text-slate-800">عميل ومشروع</div>
+            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 font-medium">ثقة كبرى الشركات</p>
           </div>
 
-          <div class="p-4 sm:p-6 bg-white rounded-xl sm:rounded-2xl shadow-sm border border-slate-150">
-            <div class="text-2xl sm:text-4xl font-black text-blue-600 mb-1">30,000</div>
-            <div class="text-xs sm:text-sm font-bold text-slate-700">أقصى سعة (لتر)</div>
-            <p class="text-[10px] sm:text-xs text-slate-400 mt-0.5">تشكيلة تناسب الجميع</p>
+          <!-- 30,000 أقصى سعة (لتر) -->
+          <div class="stat-card p-4 sm:p-6 bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-lg border border-slate-200/80 transition-all duration-300 transform hover:-translate-y-1 group">
+            <div class="text-2xl sm:text-4xl lg:text-5xl font-black text-blue-600 mb-1.5 flex items-center justify-center gap-0.5 tracking-tight group-hover:scale-105 transition-transform" dir="ltr">
+              <span class="counter-value" data-target="30000">0</span>
+            </div>
+            <div class="text-xs sm:text-sm font-extrabold text-slate-800">أقصى سعة (لتر)</div>
+            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 font-medium">تشكيلة تناسب الجميع</p>
           </div>
 
-          <div class="p-4 sm:p-6 bg-white rounded-xl sm:rounded-2xl shadow-sm border border-slate-150">
-            <div class="text-2xl sm:text-4xl font-black text-emerald-600 mb-1">10 سنوات</div>
-            <div class="text-xs sm:text-sm font-bold text-slate-700">ضمان يريح بالك 🤍</div>
-            <p class="text-[10px] sm:text-xs text-slate-400 mt-0.5">شهادة ضمان معتمدة</p>
+          <!-- 10 سنوات ضمان يريح بالك -->
+          <div class="stat-card p-4 sm:p-6 bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-lg border border-slate-200/80 transition-all duration-300 transform hover:-translate-y-1 group">
+            <div class="text-2xl sm:text-4xl lg:text-5xl font-black text-emerald-600 mb-1.5 flex items-center justify-center gap-1.5 tracking-tight group-hover:scale-105 transition-transform">
+              <span class="counter-value" data-target="10">0</span>
+              <span class="text-lg sm:text-2xl font-black text-emerald-600">سنوات</span>
+            </div>
+            <div class="text-xs sm:text-sm font-extrabold text-slate-800">ضمان يريح بالك 🤍</div>
+            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 font-medium">شهادة ضمان معتمدة</p>
           </div>
 
         </div>

@@ -548,30 +548,53 @@ function handleQuoteSubmit() {
 
 function setupCounters() {
   const statsSection = document.getElementById("stats-section");
-  if (!statsSection) return;
+  const counters = document.querySelectorAll(".counter-value");
+  if (!statsSection || counters.length === 0) return;
 
   let animated = false;
-  const observer = new IntersectionObserver((entries) => {
-    if (entries[0].isIntersecting && !animated) {
-      animated = true;
-      const counters = document.querySelectorAll(".counter-value");
-      counters.forEach(counter => {
-        const target = +counter.getAttribute("data-target");
-        let count = 0;
-        const speed = target / 50;
-        const updateCount = () => {
-          count += speed;
-          if (count < target) {
-            counter.innerText = Math.ceil(count);
-            setTimeout(updateCount, 30);
-          } else {
-            counter.innerText = target.toLocaleString();
-          }
-        };
-        updateCount();
-      });
-    }
-  }, { threshold: 0.5 });
 
-  observer.observe(statsSection);
+  function runCounterAnimation() {
+    if (animated) return;
+    animated = true;
+
+    counters.forEach(counter => {
+      const target = parseInt(counter.getAttribute("data-target"), 10) || 0;
+      const duration = 2000; // 2 seconds animation
+      let startTime = null;
+
+      function step(currentTime) {
+        if (!startTime) startTime = currentTime;
+        const progress = Math.min((currentTime - startTime) / duration, 1);
+        
+        // Easing: easeOutExpo (سريع في البداية وينتهي بسلاسة فائقة)
+        const ease = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+        const currentVal = Math.floor(ease * target);
+
+        // تنسيق الأرقام مع فواصل الآلاف (مثال: 50,000)
+        counter.textContent = currentVal.toLocaleString('en-US');
+
+        if (progress < 1) {
+          requestAnimationFrame(step);
+        } else {
+          counter.textContent = target.toLocaleString('en-US');
+        }
+      }
+
+      requestAnimationFrame(step);
+    });
+  }
+
+  // تفعيل العد التلقائي التفاعلي فور وصول العميل للقسم
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0] && entries[0].isIntersecting) {
+        runCounterAnimation();
+        observer.unobserve(statsSection);
+      }
+    }, { threshold: 0.2 });
+
+    observer.observe(statsSection);
+  } else {
+    runCounterAnimation();
+  }
 }
