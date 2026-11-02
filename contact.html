@@ -66,68 +66,59 @@ Official Website: https://speed-up.tech/
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-600 selection:text-white w-full overflow-x-hidden">
 
   <!-- ==================== رأس الصفحة والتنقل (Responsive Navbar) ==================== -->
-  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100 transition-all">
+  <header class="sticky top-0 z-40 bg-white shadow-xs border-b border-slate-150 transition-all">
     <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16 sm:h-20 gap-2">
+      <div class="flex justify-between items-center h-16 sm:h-20 gap-3">
 
         <!-- اليمين: الشعار الرسمي للشركة -->
         <div class="flex items-center shrink-0">
-          <a href="index.html" class="flex items-center gap-2 sm:gap-3 group">
-            <div class="logo-container bg-white p-1 rounded-lg sm:rounded-xl shadow-sm border border-slate-100 shrink-0">
+          <a href="index.html" class="flex items-center gap-2 sm:gap-2.5 group">
+            <div class="logo-container bg-white p-1 rounded-xl shadow-xs border border-slate-150 shrink-0">
               <img src="assets/images/logo.jpg" alt="شعار شركة الشريف للخزانات"
-                class="h-9 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
+                class="h-9 sm:h-11 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
             </div>
-            <div class="flex flex-col">
-              <span class="text-base sm:text-2xl font-black text-brand-dark tracking-normal leading-none group-hover:text-blue-600 transition-colors">
-                الشريف <span class="text-blue-600 text-sm sm:text-xl font-bold">للخزانات</span>
-              </span>
-              <span class="text-[9px] sm:text-[10px] text-slate-500 font-semibold tracking-wider mt-0.5 hidden xs:block">
-                للصناعات البلاستيكية
-              </span>
-            </div>
+            <span class="text-lg sm:text-2xl font-black text-brand-dark tracking-tight leading-none group-hover:text-cyan-600 transition-colors">
+              الشريف <span class="text-cyan-500 text-xl sm:text-2xl font-black">+</span>
+            </span>
           </a>
         </div>
 
-        <!-- المنتصف: شريط التنقل للديسكتوب فقط (Desktop Navbar) -->
-        <nav class="hidden lg:flex items-center gap-1 xl:gap-1.5 text-xs xl:text-sm shrink-0">
-          <a href="index.html" class="text-slate-700 hover:text-blue-600 hover:bg-slate-50 px-2.5 xl:px-3 py-2 rounded-xl transition-all font-bold">الرئيسية</a>
-          <a href="products.html" class="text-slate-700 hover:text-blue-600 hover:bg-slate-50 px-2.5 xl:px-3 py-2 rounded-xl transition-all font-bold flex items-center gap-1.5">
-            <span>المنتجات</span>
-            <span class="text-[9px] bg-blue-600 text-white font-extrabold px-1.5 py-0.5 rounded-full">18+</span>
+        <!-- المنتصف: روابط التنقل الرئيسية -->
+        <nav class="hidden lg:flex items-center gap-7 xl:gap-9 text-sm xl:text-base font-bold shrink-0">
+          <a href="index.html" class="text-slate-700 hover:text-cyan-600 px-1 py-1 transition-colors font-bold">
+            الرئيسية
           </a>
-          <a href="about.html" class="text-slate-700 hover:text-blue-600 hover:bg-slate-50 px-2.5 xl:px-3 py-2 rounded-xl transition-all font-bold">عن الشريف</a>
-          <a href="technology.html" class="text-slate-700 hover:text-blue-600 hover:bg-slate-50 px-2.5 xl:px-3 py-2 rounded-xl transition-all font-bold">تكنولوجيا الطبقات</a>
-          <a href="calculator.html" class="text-slate-700 hover:text-blue-600 hover:bg-slate-50 px-2.5 xl:px-3 py-2 rounded-xl transition-all font-bold flex items-center gap-1">
-            <i class="fas fa-calculator text-amber-500 text-xs"></i>
-            <span>حاسبة السعة</span>
+          <a href="products.html" class="text-slate-700 hover:text-cyan-600 px-1 py-1 transition-colors font-bold">
+            منتجاتنا
           </a>
-          <a href="gallery.html" class="text-slate-700 hover:text-blue-600 hover:bg-slate-50 px-2.5 xl:px-3 py-2 rounded-xl transition-all font-bold">المعرض</a>
-          <a href="contact.html" class="text-blue-600 font-black bg-blue-50/90 px-3 py-2 rounded-xl border border-blue-200/60 shadow-sm">تواصل معنا</a>
+          <a href="contact.html" class="relative text-cyan-600 font-black px-1 py-1 border-b-2 border-cyan-500">
+            اتصل بنا
+          </a>
         </nav>
 
-        <!-- اليسار: أزرار التواصل + زر القائمة للموبايل فقط -->
-        <div class="flex items-center gap-1.5 sm:gap-3 shrink-0">
-          
+        <!-- اليسار: الأزرار الكبسولية -->
+        <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+
+          <!-- زر رقم الهاتف (كحلي كبسولي) -->
+          <a href="tel:01011380713"
+            class="px-3.5 sm:px-4 py-2 sm:py-2.5 bg-[#0c2a4a] hover:bg-slate-800 text-white text-xs sm:text-sm font-bold rounded-full shadow-sm transition flex items-center gap-1.5 sm:gap-2 shrink-0"
+            dir="ltr">
+            <i class="fas fa-phone-alt text-[11px] sm:text-xs"></i>
+            <span>01011380713</span>
+          </a>
+
+          <!-- زر طلب عرض سعر (أخضر كبسولي) -->
           <a href="contact.html#quote"
-            class="hidden md:flex px-3.5 xl:px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm font-extrabold rounded-xl shadow-md transition items-center gap-1.5">
-            <i class="fas fa-file-invoice-dollar"></i>
+            class="px-3.5 sm:px-4 py-2 sm:py-2.5 bg-emerald-500 hover:bg-emerald-600 text-white text-xs sm:text-sm font-bold rounded-full shadow-sm transition flex items-center gap-1.5 sm:gap-2 shrink-0">
+            <i class="fab fa-whatsapp text-sm sm:text-base"></i>
             <span>طلب عرض سعر</span>
           </a>
 
-          <a href="https://wa.me/201011380713?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AD%D8%AC%D8%B2%20%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%B2%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B4%D8%B1%D9%8A%D9%81"
-            target="_blank"
-            class="px-2.5 sm:px-3.5 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-bold rounded-xl shadow-sm transition flex items-center gap-1.5">
-            <i class="fab fa-whatsapp text-sm sm:text-base"></i>
-            <span class="hidden sm:inline">01011380713</span>
-            <span class="sm:hidden text-xs">واتساب</span>
-          </a>
-
-          <!-- زر القائمة الجانبية (يظهر فقط في الموبايل والتابلت) -->
+          <!-- زر القائمة الجانبية للموبايل والتابلت -->
           <button id="sidebar-toggle-btn"
-            class="lg:hidden flex items-center gap-1.5 px-2.5 sm:px-3 py-2 bg-brand-dark hover:bg-blue-600 text-white rounded-xl shadow-md transition-all font-bold text-xs cursor-pointer border border-slate-800"
+            class="lg:hidden flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-full shadow-xs transition cursor-pointer"
             aria-label="فتح القائمة الجانبية">
-            <i class="fas fa-bars-staggered text-sky-400 text-sm"></i>
-            <span class="text-xs">القائمة</span>
+            <i class="fas fa-bars-staggered text-sm sm:text-base text-slate-700"></i>
           </button>
 
         </div>
