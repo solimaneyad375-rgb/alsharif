@@ -1,0 +1,749 @@
+<!--
+================================================================================
+Official Website for El Sherif Plastic Tanks & Industrial Plastics
+
+Design & Development: Eng. Eyad Soliman
+Digital Solutions & Software Development: SpeedUp
+
+Official Website: https://speed-up.tech/
+
+© 2026 SpeedUp. All Rights Reserved.
+================================================================================
+-->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>الرئيسية | شركة الشريف للخزانات</title>
+  <meta name="description"
+    content="شركة الشريف للخزانات والصناعات البلاستيكية المتطورة - تشكيلة أحجام تناسب جميع المنشآت">
+
+  <!-- خطوط جوجل العربية -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900;1000&family=Tajawal:wght@400;500;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          'xs': '400px',
+          'sm': '640px',
+          'md': '768px',
+          'lg': '1024px',
+          'xl': '1280px',
+          '2xl': '1536px',
+        },
+        extend: {
+          colors: {
+            brand: {
+              dark: '#071e3d',
+              navy: '#0c3d69',
+              blue: '#0284c7',
+              cyan: '#00a4e4',
+              sky: '#38bdf8',
+              gold: '#f59e0b',
+            }
+          },
+          fontFamily: {
+            sans: ['Cairo', 'Tajawal', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome Icons 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- التنسيقات المخصصة -->
+  <link rel="stylesheet" href="assets/css/custom.css">
+
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+</head>
+
+<body
+  class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-600 selection:text-white w-full overflow-x-hidden">
+
+  <!-- ==================== رأس الصفحة والتنقل (Responsive Navbar) ==================== -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100 transition-all">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16 sm:h-20 gap-2">
+
+        <!-- اليمين: الشعار الرسمي للشركة -->
+        <div class="flex items-center shrink-0">
+          <a href="index.html" class="flex items-center gap-2 sm:gap-3 group">
+            <div
+              class="logo-container bg-white p-1 rounded-lg sm:rounded-xl shadow-sm border border-slate-100 shrink-0">
+              <img src="assets/images/logo.jpg" alt="شعار شركة الشريف للخزانات"
+                class="h-9 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="flex flex-col">
+              <span
+                class="text-base sm:text-2xl font-black text-brand-dark tracking-normal leading-none group-hover:text-blue-600 transition-colors">
+                الشريف <span class="text-blue-600 text-sm sm:text-xl font-bold">للخزانات</span>
+              </span>
+              <span
+                class="text-[9px] sm:text-[10px] text-slate-500 font-semibold tracking-wider mt-0.5 hidden xs:block">
+                للصناعات البلاستيكية
+              </span>
+            </div>
+          </a>
+        </div>
+
+        <!-- المنتصف: شريط التنقل للديسكتوب فقط (Desktop Navbar) -->
+        <nav class="hidden lg:flex items-center gap-1 xl:gap-1.5 text-xs xl:text-sm shrink-0">
+          <a href="index.html"
+            class="text-blue-600 font-black bg-blue-50/90 px-3 py-2 rounded-xl border border-blue-200/60 shadow-sm">الرئيسية</a>
+          <a href="products.html"
+            class="text-slate-700 hover:text-blue-600 hover:bg-slate-50 px-2.5 xl:px-3 py-2 rounded-xl transition-all font-bold flex items-center gap-1.5">
+            <span>المنتجات</span>
+            <span class="text-[9px] bg-blue-600 text-white font-extrabold px-1.5 py-0.5 rounded-full">18+</span>
+          </a>
+          <a href="about.html"
+            class="text-slate-700 hover:text-blue-600 hover:bg-slate-50 px-2.5 xl:px-3 py-2 rounded-xl transition-all font-bold">عن
+            الشريف</a>
+          <a href="technology.html"
+            class="text-slate-700 hover:text-blue-600 hover:bg-slate-50 px-2.5 xl:px-3 py-2 rounded-xl transition-all font-bold">تكنولوجيا
+            الطبقات</a>
+          <a href="calculator.html"
+            class="text-slate-700 hover:text-blue-600 hover:bg-slate-50 px-2.5 xl:px-3 py-2 rounded-xl transition-all font-bold flex items-center gap-1">
+            <i class="fas fa-calculator text-amber-500 text-xs"></i>
+            <span>حاسبة السعة</span>
+          </a>
+          <a href="gallery.html"
+            class="text-slate-700 hover:text-blue-600 hover:bg-slate-50 px-2.5 xl:px-3 py-2 rounded-xl transition-all font-bold">المعرض</a>
+          <a href="contact.html"
+            class="text-slate-700 hover:text-blue-600 hover:bg-slate-50 px-2.5 xl:px-3 py-2 rounded-xl transition-all font-bold">تواصل
+            معنا</a>
+        </nav>
+
+        <!-- اليسار: أزرار التواصل + زر القائمة للموبايل فقط -->
+        <div class="flex items-center gap-1.5 sm:gap-3 shrink-0">
+
+          <a href="contact.html#quote"
+            class="hidden md:flex px-3.5 xl:px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm font-extrabold rounded-xl shadow-md transition items-center gap-1.5">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <span>طلب عرض سعر</span>
+          </a>
+
+          <a href="https://wa.me/201011380713?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AD%D8%AC%D8%B2%20%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%B2%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B4%D8%B1%D9%8A%D9%81"
+            target="_blank"
+            class="px-2.5 sm:px-3.5 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-bold rounded-xl shadow-sm transition flex items-center gap-1.5">
+            <i class="fab fa-whatsapp text-sm sm:text-base"></i>
+            <span class="hidden sm:inline">01011380713</span>
+            <span class="sm:hidden text-xs">واتساب</span>
+          </a>
+
+          <!-- زر القائمة الجانبية (يظهر فقط في الموبايل والتابلت) -->
+          <button id="sidebar-toggle-btn"
+            class="lg:hidden flex items-center gap-1.5 px-2.5 sm:px-3 py-2 bg-brand-dark hover:bg-blue-600 text-white rounded-xl shadow-md transition-all font-bold text-xs cursor-pointer border border-slate-800"
+            aria-label="فتح القائمة الجانبية">
+            <i class="fas fa-bars-staggered text-sky-400 text-sm"></i>
+            <span class="text-xs">القائمة</span>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== غطاء التعتيم للقائمة الجانبية (Sidebar Overlay) ==================== -->
+  <div id="sidebar-overlay"
+    class="fixed inset-0 bg-slate-950/70 backdrop-blur-sm z-50 opacity-0 pointer-events-none invisible transition-all duration-300">
+  </div>
+
+  <!-- ==================== القائمة الجانبية المنزلقة المتجاوبة (Responsive Sidebar Drawer) ==================== -->
+  <aside id="sidebar-drawer"
+    class="fixed top-0 right-0 h-full w-[85vw] max-w-[340px] bg-brand-dark text-white z-50 shadow-2xl flex flex-col justify-between translate-x-full transition-transform duration-300 ease-in-out border-l border-slate-800">
+
+    <!-- رأس السلايد بار -->
+    <div class="p-4 sm:p-5 border-b border-slate-800 flex items-center justify-between bg-slate-900/70 shrink-0">
+      <div class="flex items-center gap-2.5">
+        <div class="bg-white p-1 rounded-lg shadow-sm">
+          <img src="assets/images/logo.jpg" alt="الشريف للخزانات" class="h-8 sm:h-9 w-auto object-contain">
+        </div>
+        <div>
+          <h3 class="font-black text-white text-sm sm:text-base leading-tight">الشريف <span
+              class="text-sky-400">للخزانات</span></h3>
+          <span class="text-[10px] text-slate-400 font-medium">أقسام وصفحات الموقع</span>
+        </div>
+      </div>
+      <button id="sidebar-close-btn"
+        class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-rose-600 text-slate-300 hover:text-white flex items-center justify-center transition cursor-pointer"
+        aria-label="إغلاق القائمة">
+        <i class="fas fa-times text-base"></i>
+      </button>
+    </div>
+
+    <!-- روابط صفحات الموقع المستقلة -->
+    <nav class="flex-1 overflow-y-auto p-3 sm:p-4 space-y-1.5 text-xs sm:text-sm font-bold">
+
+      <a href="index.html"
+        class="sidebar-link flex items-center justify-between p-2.5 sm:p-3 rounded-xl bg-blue-600/30 text-sky-300 border border-blue-500/40">
+        <span class="flex items-center gap-2.5 sm:gap-3">
+          <i class="fas fa-home text-sky-400 w-5 text-center text-sm sm:text-base"></i>
+          <span>الرئيسية</span>
+        </span>
+        <i class="fas fa-chevron-left text-[10px] text-slate-500"></i>
+      </a>
+
+      <a href="products.html"
+        class="sidebar-link flex items-center justify-between p-2.5 sm:p-3 rounded-xl text-slate-200">
+        <span class="flex items-center gap-2.5 sm:gap-3">
+          <i class="fas fa-cubes text-sky-400 w-5 text-center text-sm sm:text-base"></i>
+          <span>كتالوج المنتجات والمقاسات</span>
+        </span>
+        <span class="text-[10px] bg-blue-600 text-white font-extrabold px-2 py-0.5 rounded-full">18+ منتج</span>
+      </a>
+
+      <a href="about.html"
+        class="sidebar-link flex items-center justify-between p-2.5 sm:p-3 rounded-xl text-slate-200">
+        <span class="flex items-center gap-2.5 sm:gap-3">
+          <i class="fas fa-building text-sky-400 w-5 text-center text-sm sm:text-base"></i>
+          <span>عن شركة الشريف</span>
+        </span>
+        <i class="fas fa-chevron-left text-[10px] text-slate-500"></i>
+      </a>
+
+      <a href="technology.html"
+        class="sidebar-link flex items-center justify-between p-2.5 sm:p-3 rounded-xl text-slate-200">
+        <span class="flex items-center gap-2.5 sm:gap-3">
+          <i class="fas fa-layer-group text-sky-400 w-5 text-center text-sm sm:text-base"></i>
+          <span>تكنولوجيا الطبقات الأربع</span>
+        </span>
+        <i class="fas fa-chevron-left text-[10px] text-slate-500"></i>
+      </a>
+
+      <a href="calculator.html"
+        class="sidebar-link flex items-center justify-between p-2.5 sm:p-3 rounded-xl text-slate-200 bg-amber-500/10 border border-amber-500/20">
+        <span class="flex items-center gap-2.5 sm:gap-3">
+          <i class="fas fa-calculator text-amber-400 w-5 text-center text-sm sm:text-base"></i>
+          <span class="text-amber-200">حاسبة السعة الذكية</span>
+        </span>
+        <span class="text-[10px] bg-amber-500 text-slate-950 font-black px-1.5 py-0.5 rounded-full">ذكية</span>
+      </a>
+
+      <a href="gallery.html"
+        class="sidebar-link flex items-center justify-between p-2.5 sm:p-3 rounded-xl text-slate-200">
+        <span class="flex items-center gap-2.5 sm:gap-3">
+          <i class="fas fa-images text-sky-400 w-5 text-center text-sm sm:text-base"></i>
+          <span>المعرض والتوريدات الحية</span>
+        </span>
+        <i class="fas fa-chevron-left text-[10px] text-slate-500"></i>
+      </a>
+
+      <a href="contact.html"
+        class="sidebar-link flex items-center justify-between p-2.5 sm:p-3 rounded-xl text-slate-200">
+        <span class="flex items-center gap-2.5 sm:gap-3">
+          <i class="fas fa-phone-alt text-emerald-400 w-5 text-center text-sm sm:text-base"></i>
+          <span>تواصل معنا وموقعنا</span>
+        </span>
+        <i class="fas fa-chevron-left text-[10px] text-slate-500"></i>
+      </a>
+
+    </nav>
+
+    <!-- أسفل السلايد بار (أزرار التواصل السريع) -->
+    <div class="p-4 sm:p-5 border-t border-slate-800 bg-slate-900/90 space-y-2 shrink-0">
+      <a href="contact.html#quote"
+        class="sidebar-link w-full py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-xl text-center flex items-center justify-center gap-2 text-xs shadow-md transition">
+        <i class="fas fa-file-invoice-dollar"></i>
+        <span>طلب عرض سعر فوري</span>
+      </a>
+
+      <a href="https://wa.me/201011380713?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AD%D8%AC%D8%B2%20%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%B2%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B4%D8%B1%D9%8A%D9%81"
+        target="_blank"
+        class="w-full py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-black rounded-xl text-center flex items-center justify-center gap-2 text-xs shadow-md transition">
+        <i class="fab fa-whatsapp text-base"></i>
+        <span>محادثة واتساب: 01011380713</span>
+      </a>
+
+      <div class="pt-1.5 text-center text-[10px] sm:text-[11px] text-slate-400">
+        <div class="flex items-center justify-center gap-1 mb-0.5">
+          <i class="fas fa-phone text-sky-400"></i>
+          <span>للحجز:</span>
+          <a href="tel:01011380713" class="text-white font-bold hover:underline" dir="ltr">01011380713</a>
+        </div>
+        <div class="text-[9px] sm:text-[10px] text-slate-400">
+          <i class="fas fa-map-marker-alt text-amber-400 ml-1"></i>
+          <span>القليوبية - قليوب - كفر أبو جمعة</span>
+        </div>
+      </div>
+    </div>
+
+  </aside>
+
+
+  <main class="w-full overflow-x-hidden">
+
+    <!-- ==================== قسم البطل الرئيسي (Responsive Hero) ==================== -->
+    <section class="relative bg-hero-pattern text-white overflow-hidden py-12 sm:py-16 lg:py-24">
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent opacity-85 pointer-events-none">
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+
+          <!-- النصوص الترويجية المعتمدة -->
+          <div class="lg:col-span-7 text-center lg:text-right">
+
+            <div
+              class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/20 border border-blue-400/30 text-sky-200 text-xs sm:text-sm font-bold mb-5 backdrop-blur-md">
+              <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-ping"></span>
+              <span>تشكيلة أحجام تناسب جميع المنشآت</span>
+            </div>
+
+            <h1
+              class="text-3xl sm:text-4xl lg:text-5xl font-black leading-[1.3] sm:leading-[1.35] lg:leading-[1.35] mb-5 tracking-normal">
+              <span class="block text-white mb-1.5">مياه نقية تدوم،</span>
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-300 via-cyan-200 to-white">
+                وجودة عالية بضمان حقيقي
+              </span>
+            </h1>
+
+            <p
+              class="text-slate-200 text-sm sm:text-base lg:text-lg leading-relaxed mb-3 max-w-2xl mx-auto lg:mx-0 font-medium">
+              نقدم تشكيلة واسعة من الخزانات المصممة بأفضل الخامات (البولي إيثيلين النقي).
+            </p>
+            <p
+              class="text-sky-300 text-xs sm:text-sm lg:text-base font-bold mb-7 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+              جودة عالية • متانة تدوم • وضمان حقيقي يريح بالك 🤍
+            </p>
+
+            <!-- بطاقات الثقة والضمان الثلاثة المنسقة -->
+            <div class="grid grid-cols-3 gap-2.5 sm:gap-4 mb-8 max-w-lg mx-auto lg:mx-0">
+              <div
+                class="bg-white/10 backdrop-blur-md p-3 sm:p-4 rounded-xl sm:rounded-2xl border border-white/10 text-center">
+                <i class="fas fa-shield-alt text-amber-400 text-xl sm:text-2xl mb-1.5"></i>
+                <div class="font-extrabold text-xs sm:text-sm text-white">10 سنوات</div>
+                <div class="text-[10px] sm:text-xs text-slate-300 mt-0.5">ضمان استبدال</div>
+              </div>
+              <div
+                class="bg-white/10 backdrop-blur-md p-3 sm:p-4 rounded-xl sm:rounded-2xl border border-white/10 text-center">
+                <i class="fas fa-tint text-sky-400 text-xl sm:text-2xl mb-1.5"></i>
+                <div class="font-extrabold text-xs sm:text-sm text-white">Food-Grade</div>
+                <div class="text-[10px] sm:text-xs text-slate-300 mt-0.5">بولي إيثيلين بكر</div>
+              </div>
+              <div
+                class="bg-white/10 backdrop-blur-md p-3 sm:p-4 rounded-xl sm:rounded-2xl border border-white/10 text-center">
+                <i class="fas fa-sun text-yellow-300 text-xl sm:text-2xl mb-1.5"></i>
+                <div class="font-extrabold text-xs sm:text-sm text-white">حجب 100%</div>
+                <div class="text-[10px] sm:text-xs text-slate-300 mt-0.5">مانع لأشعة UV</div>
+              </div>
+            </div>
+
+            <!-- أزرار الإجراء السريع والاتصال -->
+            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
+              <a href="products.html"
+                class="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 bg-gradient-to-r from-blue-600 to-sky-500 hover:from-blue-700 hover:to-sky-600 text-white font-extrabold rounded-xl sm:rounded-2xl shadow-xl shadow-blue-600/30 text-center transition flex items-center justify-center gap-2 text-sm sm:text-base">
+                <i class="fas fa-cubes text-base"></i>
+                <span>تصفح تشكيلة الأحجام والمنتجات</span>
+              </a>
+              <a href="tel:01011380713"
+                class="w-full sm:w-auto px-6 sm:px-7 py-3.5 sm:py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl sm:rounded-2xl shadow-lg transition flex items-center justify-center gap-2 text-sm sm:text-base">
+                <i class="fas fa-phone-alt"></i>
+                <span>للحجز: 01011380713</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- المعرض التفاعلي في الهيرو -->
+          <div class="lg:col-span-5 relative mt-6 lg:mt-0">
+            <div class="relative mx-auto max-w-sm sm:max-w-md">
+
+              <div class="absolute -top-6 -right-6 w-36 h-36 bg-sky-500/25 rounded-full blur-3xl"></div>
+              <div class="absolute -bottom-6 -left-6 w-36 h-36 bg-cyan-400/25 rounded-full blur-3xl"></div>
+
+              <!-- بطاقة الخزان بتصميم ناصع متناسق بالكامل بدون حواف مشوهة -->
+              <div
+                class="relative bg-white rounded-3xl p-3 sm:p-4 shadow-2xl border border-slate-100 overflow-hidden group">
+
+                <!-- صورة الخزان مالئة للمحيط بالكامل ومتناسقة مع الإطار -->
+                <div
+                  class="w-full h-72 sm:h-88 flex items-center justify-center bg-white rounded-2xl overflow-hidden p-1">
+                  <img src="assets/images/optimized/tank-white-30000.webp" alt="خزان الشريف سعة 30,000 لتر"
+                    class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                </div>
+
+                <!-- شريط البيانات المتناسق أسفل الخزان -->
+                <div class="mt-2.5 bg-slate-950 text-white p-3.5 sm:p-4 rounded-2xl text-right">
+                  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                    <h4 class="font-black text-white text-sm sm:text-base">خزان الشريف الرأسي المعزول</h4>
+                    <span
+                      class="inline-block text-[10px] sm:text-xs text-sky-300 font-bold bg-sky-500/20 px-2.5 py-0.5 rounded-md border border-sky-400/30 w-fit">
+                      سعات من 500 إلى 30,000 لتر
+                    </span>
+                  </div>
+                  <p class="text-[10px] sm:text-xs text-slate-300 leading-relaxed">
+                    بولي إيثيلين بيور معتمد صحياً • قولبة دورانية بدون لحامات • ضمان 10 سنوات
+                  </p>
+                </div>
+
+                <!-- مزايا سريعة معتمدة -->
+                <div
+                  class="mt-2.5 pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] sm:text-xs text-slate-600 px-1 font-bold">
+                  <span class="flex items-center gap-1.5 text-emerald-600"><i class="fas fa-check-circle"></i> معتمد
+                    صحياً</span>
+                  <span class="flex items-center gap-1.5 text-blue-600"><i class="fas fa-shield-alt"></i> ضمان 10
+                    سنوات</span>
+                  <span class="flex items-center gap-1.5 text-amber-600"><i class="fas fa-sun"></i> عازل للحرارة</span>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== شريط الأرقام والإنجازات ==================== -->
+    <section class="py-8 sm:py-10 bg-slate-50 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 text-center">
+
+          <div class="p-4 sm:p-6 bg-white rounded-xl sm:rounded-2xl shadow-sm border border-slate-150">
+            <div class="text-2xl sm:text-4xl font-black text-blue-600 mb-1">+20</div>
+            <div class="text-xs sm:text-sm font-bold text-slate-700">عاماً من الخبرة</div>
+            <p class="text-[10px] sm:text-xs text-slate-400 mt-0.5">تطوير مستمر</p>
+          </div>
+
+          <div class="p-4 sm:p-6 bg-white rounded-xl sm:rounded-2xl shadow-sm border border-slate-150">
+            <div class="text-2xl sm:text-4xl font-black text-blue-600 mb-1">+50,000</div>
+            <div class="text-xs sm:text-sm font-bold text-slate-700">عميل ومشروع</div>
+            <p class="text-[10px] sm:text-xs text-slate-400 mt-0.5">ثقة كبرى الشركات</p>
+          </div>
+
+          <div class="p-4 sm:p-6 bg-white rounded-xl sm:rounded-2xl shadow-sm border border-slate-150">
+            <div class="text-2xl sm:text-4xl font-black text-blue-600 mb-1">30,000</div>
+            <div class="text-xs sm:text-sm font-bold text-slate-700">أقصى سعة (لتر)</div>
+            <p class="text-[10px] sm:text-xs text-slate-400 mt-0.5">تشكيلة تناسب الجميع</p>
+          </div>
+
+          <div class="p-4 sm:p-6 bg-white rounded-xl sm:rounded-2xl shadow-sm border border-slate-150">
+            <div class="text-2xl sm:text-4xl font-black text-emerald-600 mb-1">10 سنوات</div>
+            <div class="text-xs sm:text-sm font-bold text-slate-700">ضمان يريح بالك 🤍</div>
+            <p class="text-[10px] sm:text-xs text-slate-400 mt-0.5">شهادة ضمان معتمدة</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== استعراض تشكيلة المنتجات في الرئيسية ==================== -->
+    <section class="py-12 sm:py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-12 gap-4">
+          <div>
+            <div class="inline-block bg-blue-100 text-blue-700 text-xs font-black px-3.5 py-1 rounded-full mb-2">
+              تشكيلة واسعة من الخزانات والمنتجات
+            </div>
+            <h2 class="text-2xl sm:text-4xl font-black text-slate-900 mb-1">
+              خزانات مياه تناسب جميع المنشآت
+            </h2>
+            <p class="text-slate-600 text-xs sm:text-sm">
+              مصممة بأفضل خامات البولي إيثيلين النقي لتدوم طويلاً وتحافظ على صحة أسرتك.
+            </p>
+          </div>
+          <div>
+            <a href="products.html"
+              class="inline-flex items-center gap-2 px-5 py-2.5 sm:px-6 sm:py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-md transition text-xs sm:text-sm">
+              <span>تصفح الكتالوج الكامل (18+ منتج)</span>
+              <i class="fas fa-arrow-left text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- عينات مميزة من المنتجات -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8">
+
+          <div
+            class="bg-slate-50 border border-slate-200 rounded-2xl p-4 sm:p-5 hover:shadow-lg transition flex flex-col justify-between">
+            <div>
+              <div class="h-40 sm:h-48 flex items-center justify-center p-3 bg-white rounded-xl mb-3">
+                <img src="assets/images/optimized/tank-white-30000.webp" alt="خزان 30,000 لتر"
+                  class="max-h-full w-auto object-contain">
+              </div>
+              <span class="text-[11px] font-bold text-blue-600 block mb-0.5">خزانات سعات عملاقة</span>
+              <h3 class="font-black text-slate-900 text-sm sm:text-base mb-1">خزان أبيض سعة 30,000 لتر</h3>
+              <p class="text-[11px] sm:text-xs text-slate-500 mb-4">للمشاريع والمصانع والكمبوندات والفنادق الكبرى.</p>
+            </div>
+            <a href="products.html"
+              class="block text-center py-2 bg-blue-600 text-white rounded-lg text-xs font-bold hover:bg-blue-700 transition">عرض
+              المواصفات</a>
+          </div>
+
+          <div
+            class="bg-slate-50 border border-slate-200 rounded-2xl p-4 sm:p-5 hover:shadow-lg transition flex flex-col justify-between">
+            <div>
+              <div class="h-40 sm:h-48 flex items-center justify-center p-3 bg-white rounded-xl mb-3">
+                <img src="assets/images/optimized/tank-white-3000.webp" alt="خزان 3,000 لتر"
+                  class="max-h-full w-auto object-contain">
+              </div>
+              <span class="text-[11px] font-bold text-blue-600 block mb-0.5">الأكثر طلباً للمنازل</span>
+              <h3 class="font-black text-slate-900 text-sm sm:text-base mb-1">خزان أبيض سعة 3,000 لتر</h3>
+              <p class="text-[11px] sm:text-xs text-slate-500 mb-4">مثالي للفلل والمنازل العائلية ذات 2-4 طوابق.</p>
+            </div>
+            <a href="products.html"
+              class="block text-center py-2 bg-blue-600 text-white rounded-lg text-xs font-bold hover:bg-blue-700 transition">عرض
+              المواصفات</a>
+          </div>
+
+          <div
+            class="bg-slate-50 border border-slate-200 rounded-2xl p-4 sm:p-5 hover:shadow-lg transition flex flex-col justify-between">
+            <div>
+              <div class="h-40 sm:h-48 flex items-center justify-center p-3 bg-white rounded-xl mb-3">
+                <img src="assets/images/optimized/tank-blue-hero.webp" alt="خزان أزرق معزول"
+                  class="max-h-full w-auto object-contain">
+              </div>
+              <span class="text-[11px] font-bold text-sky-600 block mb-0.5">عزل تام للأشعة UV</span>
+              <h3 class="font-black text-slate-900 text-sm sm:text-base mb-1">خزان الشريف الأزرق المعزول</h3>
+              <p class="text-[11px] sm:text-xs text-slate-500 mb-4">حماية مطلقة من حرارة الشمس ومنع الطحالب 100%.</p>
+            </div>
+            <a href="products.html"
+              class="block text-center py-2 bg-blue-600 text-white rounded-lg text-xs font-bold hover:bg-blue-700 transition">عرض
+              المواصفات</a>
+          </div>
+
+          <div
+            class="bg-slate-50 border border-slate-200 rounded-2xl p-4 sm:p-5 hover:shadow-lg transition flex flex-col justify-between">
+            <div>
+              <div class="h-40 sm:h-48 flex items-center justify-center p-3 bg-white rounded-xl mb-3">
+                <img src="assets/images/optimized/kiosk-blue-dome.webp" alt="كشك حراسة"
+                  class="max-h-full w-auto object-contain">
+              </div>
+              <span class="text-[11px] font-bold text-purple-600 block mb-0.5">أكشاك حراسة وكبائن</span>
+              <h3 class="font-black text-slate-900 text-sm sm:text-base mb-1">كشك حراسة بانوراما قبة زرقاء</h3>
+              <p class="text-[11px] sm:text-xs text-slate-500 mb-4">فايبر جلاس مسلح عازل للحرارة والصوت ومجهز كهربائياً.
+              </p>
+            </div>
+            <a href="products.html"
+              class="block text-center py-2 bg-blue-600 text-white rounded-lg text-xs font-bold hover:bg-blue-700 transition">عرض
+              المواصفات</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== روابط سريعة لصفحات الموقع ==================== -->
+    <section class="py-12 sm:py-16 bg-slate-50 border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
+          <h3 class="text-xl sm:text-3xl font-black text-slate-900 mb-1">استكشف أقسام الموقع</h3>
+          <p class="text-slate-500 text-xs sm:text-sm">كل ما تحتاج لمعرفته عن تكنولوجيا التصنيع والمواصفات والحجز</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+
+          <a href="about.html"
+            class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-400 transition group">
+            <div
+              class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-lg mb-3 group-hover:scale-110 transition-transform">
+              <i class="fas fa-building"></i>
+            </div>
+            <h4 class="font-black text-slate-900 text-sm sm:text-base mb-1">عن شركة الشريف</h4>
+            <p class="text-xs text-slate-500 mb-2">تاريخنا، معايير الجودة، ومصنعنا في قليوب كفر أبو جمعة.</p>
+            <span class="text-xs font-bold text-blue-600 flex items-center gap-1">قراءة المزيد <i
+                class="fas fa-arrow-left text-[10px]"></i></span>
+          </a>
+
+          <a href="technology.html"
+            class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-400 transition group">
+            <div
+              class="w-10 h-10 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center text-lg mb-3 group-hover:scale-110 transition-transform">
+              <i class="fas fa-layer-group"></i>
+            </div>
+            <h4 class="font-black text-slate-900 text-sm sm:text-base mb-1">تكنولوجيا الطبقات الأربع</h4>
+            <p class="text-xs text-slate-500 mb-2">كيف نحمي مياهك من حرارة الشمس والطحالب والميكروبات.</p>
+            <span class="text-xs font-bold text-sky-600 flex items-center gap-1">اكتشف التكنولوجيا <i
+                class="fas fa-arrow-left text-[10px]"></i></span>
+          </a>
+
+          <a href="calculator.html"
+            class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-amber-400 transition group">
+            <div
+              class="w-10 h-10 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center text-lg mb-3 group-hover:scale-110 transition-transform">
+              <i class="fas fa-calculator"></i>
+            </div>
+            <h4 class="font-black text-slate-900 text-sm sm:text-base mb-1">حاسبة السعة الذكية</h4>
+            <p class="text-xs text-slate-500 mb-2">أداة تفاعلية لحساب حجم الخزان الأنسب لمنزلك أو منشأتك.</p>
+            <span class="text-xs font-bold text-amber-600 flex items-center gap-1">احسب الآن <i
+                class="fas fa-arrow-left text-[10px]"></i></span>
+          </a>
+
+          <a href="contact.html"
+            class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-emerald-400 transition group">
+            <div
+              class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-lg mb-3 group-hover:scale-110 transition-transform">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <h4 class="font-black text-slate-900 text-sm sm:text-base mb-1">تواصل معنا وموقعنا</h4>
+            <p class="text-xs text-slate-500 mb-2">العنوان: القليوبية قليوب كفر أبو جمعة • هاتف: 01011380713.</p>
+            <span class="text-xs font-bold text-emerald-600 flex items-center gap-1">تواصل وموقعنا <i
+                class="fas fa-arrow-left text-[10px]"></i></span>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== تذييل الصفحة الموحد (Responsive Footer) ==================== -->
+  <footer class="bg-brand-dark text-slate-400 py-10 sm:py-14 border-t border-slate-800 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+
+        <!-- معلومات الشركة -->
+        <div class="space-y-3">
+          <div class="flex items-center gap-3">
+            <div class="bg-white p-1 rounded-lg">
+              <img src="assets/images/logo.jpg" alt="الشريف للخزانات" class="h-9 w-auto">
+            </div>
+            <span class="text-lg sm:text-xl font-black text-white">الشريف <span
+                class="text-sky-400">للخزانات</span></span>
+          </div>
+          <p class="text-xs leading-relaxed text-slate-300">
+            تشكيلة واسعة من الخزانات المصممة بأفضل خامات البولي إيثيلين. جودة عالية، متانة تدوم، وضمان حقيقي يريح بالك
+            🤍
+          </p>
+          <div class="text-xs text-slate-300 space-y-1.5 pt-1">
+            <div class="flex items-center gap-2">
+              <i class="fas fa-phone-alt text-emerald-400"></i>
+              <span>للحجز والاستفسار:</span>
+              <a href="tel:01011380713" class="text-white font-bold hover:underline" dir="ltr">01011380713</a>
+            </div>
+            <div class="flex items-start gap-2">
+              <i class="fas fa-map-marker-alt text-amber-400 mt-0.5"></i>
+              <span>العنوان: القليوبية - قليوب - كفر أبو جمعة</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- صفحات الموقع -->
+        <div>
+          <h4 class="text-white font-bold mb-3 text-sm sm:text-base">صفحات الموقع</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="index.html" class="hover:text-white transition flex items-center gap-1.5"><i
+                  class="fas fa-angle-left text-sky-400 text-[10px]"></i> الصفحة الرئيسية</a></li>
+            <li><a href="products.html" class="hover:text-white transition flex items-center gap-1.5"><i
+                  class="fas fa-angle-left text-sky-400 text-[10px]"></i> كتالوج الخزانات والمنتجات</a></li>
+            <li><a href="about.html" class="hover:text-white transition flex items-center gap-1.5"><i
+                  class="fas fa-angle-left text-sky-400 text-[10px]"></i> عن شركة الشريف</a></li>
+            <li><a href="technology.html" class="hover:text-white transition flex items-center gap-1.5"><i
+                  class="fas fa-angle-left text-sky-400 text-[10px]"></i> تكنولوجيا الطبقات الأربع</a></li>
+            <li><a href="calculator.html" class="hover:text-white transition flex items-center gap-1.5"><i
+                  class="fas fa-angle-left text-sky-400 text-[10px]"></i> حاسبة السعة الذكية</a></li>
+            <li><a href="gallery.html" class="hover:text-white transition flex items-center gap-1.5"><i
+                  class="fas fa-angle-left text-sky-400 text-[10px]"></i> المعرض والتوريدات</a></li>
+            <li><a href="contact.html" class="hover:text-white transition flex items-center gap-1.5"><i
+                  class="fas fa-angle-left text-sky-400 text-[10px]"></i> تواصل معنا وموقعنا</a></li>
+          </ul>
+        </div>
+
+        <!-- تشكيلة المنتجات -->
+        <div>
+          <h4 class="text-white font-bold mb-3 text-sm sm:text-base">تشكيلة المنتجات</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="products.html" class="hover:text-white transition">خزانات مياه بيضاء (500 إلى 30,000 لتر)</a>
+            </li>
+            <li><a href="products.html" class="hover:text-white transition">خزانات زرقاء معزولة ضد الأشعة UV</a></li>
+            <li><a href="products.html" class="hover:text-white transition">أكشاك حراسة دائرية ومربعة فايبر جلاس</a>
+            </li>
+            <li><a href="products.html" class="hover:text-white transition">حمامات وكبائن متنقلة مجهزة بالكامل</a></li>
+            <li><a href="products.html" class="hover:text-white transition">حواجز طرق نيوجيرسي سلامة ومرور</a></li>
+          </ul>
+        </div>
+
+        <!-- شهادة الضمان والأمان -->
+        <div>
+          <h4 class="text-white font-bold mb-3 text-sm sm:text-base">ضمان حقيقي يريح بالك 🤍</h4>
+          <div class="p-4 bg-slate-800/80 rounded-2xl border border-slate-700 text-xs space-y-2">
+            <div class="flex items-center gap-2 text-amber-400 font-bold">
+              <i class="fas fa-shield-alt text-base"></i>
+              <span>ضمان استبدال معتمد 10 سنوات</span>
+            </div>
+            <p class="text-slate-300 text-[11px] leading-relaxed">
+              جميع خزانات الشريف مضمونة ضد عيوب الصناعة أو تسريب المياه بموجب شهادة الضمان المعتمدة.
+            </p>
+            <a href="contact.html"
+              class="inline-block py-2 px-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg text-center w-full transition text-xs">
+              احجز خزانك الآن
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div
+        class="pt-6 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-xs text-slate-400 gap-3 text-center md:text-right">
+        <div>
+          جميع الحقوق محفوظة © 2026 شركة الشريف للخزانات والصناعات البلاستيكية • قليوب كفر أبو جمعة.
+        </div>
+        <div class="flex flex-wrap items-center gap-1.5 justify-center">
+          <span>حقوق التنفيذ والنشر محفوظة لـ</span>
+          <a href="https://speed-up.tech/" target="_blank" rel="noopener noreferrer"
+            class="text-sky-400 hover:text-sky-300 font-bold transition inline-flex items-center gap-1 group">
+            <span>سبيد أب (SpeedUp)</span>
+            <i class="fas fa-external-link-alt text-[10px] group-hover:-translate-y-0.5 transition-transform"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== أزرار الإجراءات العائمة المتجاوبة ==================== -->
+  <div class="fixed bottom-4 left-4 z-40 flex flex-col gap-2.5">
+    <a href="https://wa.me/201011380713?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AD%D8%AC%D8%B2%20%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%B2%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B4%D8%B1%D9%8A%D9%81"
+      target="_blank"
+      class="whatsapp-pulse w-12 h-12 sm:w-14 sm:h-14 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full flex items-center justify-center text-xl sm:text-2xl shadow-xl transition-transform hover:scale-110"
+      aria-label="تواصل عبر واتساب">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="tel:01011380713"
+      class="w-10 h-10 sm:w-12 sm:h-12 bg-blue-600 hover:bg-blue-700 text-white rounded-full flex items-center justify-center text-base sm:text-lg shadow-lg transition-transform hover:scale-110 mx-auto"
+      aria-label="اتصل بنا">
+      <i class="fas fa-phone-alt"></i>
+    </a>
+  </div>
+
+  <!-- النافذة المنبثقة لتفاصيل المنتج (Responsive Product Modal) -->
+  <div id="product-modal"
+    class="fixed inset-0 z-50 bg-slate-900/70 backdrop-blur-sm hidden items-center justify-center p-3 sm:p-4">
+    <div
+      class="bg-white rounded-2xl sm:rounded-3xl max-w-3xl w-full p-4 sm:p-8 relative shadow-2xl max-h-[92vh] overflow-y-auto animate-fade-in">
+      <button onclick="closeProductModal()"
+        class="absolute top-3 left-3 w-8 h-8 sm:w-10 sm:h-10 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-full flex items-center justify-center text-sm sm:text-lg transition cursor-pointer"
+        aria-label="إغلاق">
+        <i class="fas fa-times"></i>
+      </button>
+      <div id="modal-dynamic-content"></div>
+    </div>
+  </div>
+
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

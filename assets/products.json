@@ -1,0 +1,322 @@
+[
+  {
+    "id": "tank-white-30000",
+    "file": "Al-Sharif 30,000-Litre Water Tank.png",
+    "name": "خزان مياه أبيض سعة 30,000 لتر",
+    "category": "tanks-white",
+    "category_name": "خزانات مياه بيضاء",
+    "capacity": "30,000 لتر",
+    "type": "رأسي - أبيض ناصع 4 طبقات",
+    "material": "بولي إيثيلين بيور عالي الكثافة (Food-Grade)",
+    "features": [
+      "سعة صناعية عملاقة",
+      "معالج ضد الأشعة فوق البنفسجية UV",
+      "مانع لتكون الطحالب 100%",
+      "ضمان 10 سنوات"
+    ],
+    "recommended_for": "المشاريع الكبرى، المصانع، الفنادق، والقرى السياحية",
+    "image": "assets/images/optimized/tank-white-30000.webp"
+  },
+  {
+    "id": "tank-white-20000",
+    "file": "Sharif 20,000-Litre Water Tank.png",
+    "name": "خزان مياه أبيض سعة 20,000 لتر",
+    "category": "tanks-white",
+    "category_name": "خزانات مياه بيضاء",
+    "capacity": "20,000 لتر",
+    "type": "رأسي متعدد الطبقات",
+    "material": "بولي إيثيلين نقي معتمد صحياً",
+    "features": [
+      "طبقة عازلة سميكة",
+      "مقاوم لتقلبات الطقس والحرارة",
+      "فتحات توصيل متعددة ومحكمة",
+      "ضمان 10 سنوات"
+    ],
+    "recommended_for": "المباني السكنية الكبيرة والمنشآت التجارية",
+    "image": "assets/images/optimized/tank-white-20000.webp"
+  },
+  {
+    "id": "tank-white-15000",
+    "file": "Al Shareef 15000-Litre Water Tank.png",
+    "name": "خزان مياه أبيض سعة 15,000 لتر",
+    "category": "tanks-white",
+    "category_name": "خزانات مياه بيضاء",
+    "capacity": "15,000 لتر",
+    "type": "رأسي معزول",
+    "material": "بولي إيثيلين نقي 100%",
+    "features": [
+      "عزل حراري فائق",
+      "جدران سميكة مدعمة بحلقات تقوية",
+      "مطابق للمواصفات القياسية",
+      "ضمان 10 سنوات"
+    ],
+    "recommended_for": "الأبراج السكنية والمزارع والمراكز الطبية",
+    "image": "assets/images/optimized/tank-white-15000.webp"
+  },
+  {
+    "id": "tank-white-10000",
+    "file": "Al-Sharif 10000-Litre Water Tank.png",
+    "name": "خزان مياه أبيض سعة 10,000 لتر",
+    "category": "tanks-white",
+    "category_name": "خزانات مياه بيضاء",
+    "capacity": "10,000 لتر",
+    "type": "رأسي",
+    "material": "بولي إيثيلين صحي معتمد",
+    "features": [
+      "حلقات تقوية أفقية دائرية متينة",
+      "سهولة التركيب والنقل",
+      "مقاومة تامة للصدأ والتآكل",
+      "ضمان 10 سنوات"
+    ],
+    "recommended_for": "العمارات السكنية والمصانع المتوسطة",
+    "image": "assets/images/optimized/tank-white-10000.webp"
+  },
+  {
+    "id": "tank-white-3000",
+    "file": "Al Shareef 3000-Litre Water Tank.png",
+    "name": "خزان مياه أبيض سعة 3,000 لتر",
+    "category": "tanks-white",
+    "category_name": "خزانات مياه بيضاء",
+    "capacity": "3,000 لتر",
+    "type": "رأسي للمنازل والفلل",
+    "material": "بولي إيثيلين نقي متعدد الطبقات",
+    "features": [
+      "سعة مثالية للعائلات والفلل",
+      "تصميم انسيابي عملي",
+      "غطاء علوي محكم بقفل أمان",
+      "ضمان 10 سنوات"
+    ],
+    "recommended_for": "الفلل السكنية والمنازل ذات 3-5 طوابق",
+    "image": "assets/images/optimized/tank-white-3000.webp"
+  },
+  {
+    "id": "tank-white-ribbed",
+    "file": "White Ribbed Tank with Arabic Logo.png",
+    "name": "خزان مياه أبيض مضلع معزول (Premium)",
+    "category": "tanks-white",
+    "category_name": "خزانات مياه بيضاء",
+    "capacity": "سعات متعددة (1000 - 5000 لتر)",
+    "type": "رأسي مضلع فائق المتانة",
+    "material": "بولي إيثيلين عالي الكثافة HDPE",
+    "features": [
+      "تضليع خارجي لزيادة مقاومة ضغط المياه",
+      "طبقة بيضاء ناصعة ملساء داخلياً",
+      "أعلى كفاءة عزل حراري",
+      "ضمان 10 سنوات"
+    ],
+    "recommended_for": "أسطح المنازل والمباني المعرضة لأشعة الشمس المباشرة",
+    "image": "assets/images/optimized/tank-white-ribbed.webp"
+  },
+  {
+    "id": "tank-white-500",
+    "file": "White Tank with Al-Sharif Logo and Labelling.png",
+    "name": "خزان مياه أبيض مضلع سعة مدمجة",
+    "category": "tanks-white",
+    "category_name": "خزانات مياه بيضاء",
+    "capacity": "1,000 / 2,000 لتر",
+    "type": "رأسي مدمج",
+    "material": "بولي إيثيلين صحي",
+    "features": [
+      "وزن خفيف وقوة تحمل عالية",
+      "سهل التركيب في المساحات المحدودة",
+      "مقاوم لنمو البكتيريا",
+      "ضمان 10 سنوات"
+    ],
+    "recommended_for": "المنازل الصغيرة والشقق والأسطح",
+    "image": "assets/images/optimized/tank-white-500.webp"
+  },
+  {
+    "id": "tank-blue-hero",
+    "file": "Alsharif Blue Water Tank Product Shot.png",
+    "name": "خزان الشريف الأزرق المعزول فائق التحمل",
+    "category": "tanks-blue",
+    "category_name": "خزانات مياه زرقاء",
+    "capacity": "سعات متعددة (500 - 10,000 لتر)",
+    "type": "رأسي - أزرق عاكس للشمس",
+    "material": "بولي إيثيلين مزدوج الطبقات معالج UV",
+    "features": [
+      "طبقة خارجية زرقاء مانعة تماماً لنفاذ الضوء",
+      "حماية مطلقة من تكون الطحالب الخضراء",
+      "طبقة داخلية بيضاء لمراقبة نقاء المياه",
+      "ضمان 10 سنوات"
+    ],
+    "recommended_for": "المناطق الحارة والمكشوفة ومحطات المياه",
+    "image": "assets/images/optimized/tank-blue-hero.webp"
+  },
+  {
+    "id": "tank-blue-500",
+    "file": "Blue 500-Litre Tank with Arabic Branding.png",
+    "name": "خزان مياه أزرق سعة 500 لتر",
+    "category": "tanks-blue",
+    "category_name": "خزانات مياه زرقاء",
+    "capacity": "500 لتر",
+    "type": "رأسي مدمج",
+    "material": "بولي إيثيلين نقي",
+    "features": [
+      "حجم مدمج واقتصادي",
+      "مناسب للمطاعم والعيادات والشقق",
+      "عازل للحرارة والضوء",
+      "ضمان 10 سنوات"
+    ],
+    "recommended_for": "الشقق السكنية، المحلات التجارية، والمطابخ",
+    "image": "assets/images/optimized/tank-blue-500.webp"
+  },
+  {
+    "id": "tank-blue-3000",
+    "file": "Blue Water Tank with Arabic Branding.png",
+    "name": "خزان مياه أزرق سعة 3,000 لتر",
+    "category": "tanks-blue",
+    "category_name": "خزانات مياه زرقاء",
+    "capacity": "3,000 لتر",
+    "type": "رأسي معزول",
+    "material": "بولي إيثيلين متعدد الطبقات",
+    "features": [
+      "أعلى كفاءة في منع الطحالب",
+      "مقاوم للأشعة فوق البنفسجية",
+      "متانة فائقة لعمر افتراضي طويل",
+      "ضمان 10 سنوات"
+    ],
+    "recommended_for": "المنازل الكبيرة والمنشآت الخدمية",
+    "image": "assets/images/optimized/tank-blue-3000.webp"
+  },
+  {
+    "id": "kiosk-blue-dome",
+    "file": "Branded Blue Dome Security Kiosk.png",
+    "name": "كشك حراسة الشريف بقبة زرقاء دائرية",
+    "category": "kiosks",
+    "category_name": "أكشاك حراسة وكبائن",
+    "capacity": "قطر 105 سم / 120 سم / 150 سم",
+    "type": "كشك أمني دائري فايبر جلاس",
+    "material": "فايبر جلاس مسلح بالبوليستر المقاوم للعوامل الجوية",
+    "features": [
+      "رؤية بانورامية 360 درجة",
+      "عزل حراري وصوتي ممتاز",
+      "مقاوم للأمطار والرياح والحرارة",
+      "شامل مكتب داخلي ومجرى كهرباء"
+    ],
+    "recommended_for": "بوابات الكمبوندات، الشركات، المصانع، ومواقف السيارات",
+    "image": "assets/images/optimized/kiosk-blue-dome.webp"
+  },
+  {
+    "id": "kiosk-white-blue",
+    "file": "Branded White and Blue Guard Booth.png",
+    "name": "كابينة حراسة مربعة أبيض وأزرق",
+    "category": "kiosks",
+    "category_name": "أكشاك حراسة وكبائن",
+    "capacity": "أبعاد 120×120 سم / 150×150 سم",
+    "type": "كابينة أمنية مربعة",
+    "material": "ساندوتش بانل / فايبر جلاس معالج",
+    "features": [
+      "نوافذ ألوميتال سحابة محكمة",
+      "باب مقفل بأمان تام",
+      "تمديدات كهربائية متكاملة (إنارة ومقبس)",
+      "دهان مقاوم للأشعة فوق البنفسجية"
+    ],
+    "recommended_for": "مداخل المنشآت الحيوية والمؤسسات والبنوك",
+    "image": "assets/images/optimized/kiosk-white-blue.webp"
+  },
+  {
+    "id": "kiosk-beige",
+    "file": "Branded Al‑Sharif Beige Kiosk.png",
+    "name": "كشك حراسة فاخر باللون البيج",
+    "category": "kiosks",
+    "category_name": "أكشاك حراسة وكبائن",
+    "capacity": "أبعاد متعددة",
+    "type": "كشك كلاسيكي",
+    "material": "بولي إيثيلين وفايبر جلاس عالي الجودة",
+    "features": [
+      "لون بيج فخم ينسجم مع الواجهات المعمارية",
+      "عزل كامل ضد الحرارة والرطوبة",
+      "قاعدة متينة سهلة التثبيت والنقل"
+    ],
+    "recommended_for": "القرى السياحية والفنادق والمجمعات الراقية",
+    "image": "assets/images/optimized/kiosk-beige.webp"
+  },
+  {
+    "id": "kiosk-cream-round",
+    "file": "Cream Security Kiosk with Arabic Signage.png",
+    "name": "كشك حراسة دائري كريمي أنيق",
+    "category": "kiosks",
+    "category_name": "أكشاك حراسة وكبائن",
+    "capacity": "قطر 120 سم",
+    "type": "كشك دائري",
+    "material": "فايبر جلاس عالي المتانة",
+    "features": [
+      "تصميم دائري انسيابي حديث",
+      "نوافذ سيكوريت عريضة",
+      "مظهر جمالي راقٍ وبناء متين"
+    ],
+    "recommended_for": "المستشفيات والمدارس والجامعات والنوادي",
+    "image": "assets/images/optimized/kiosk-cream-round.webp"
+  },
+  {
+    "id": "kiosk-green",
+    "file": "Branded Green-Trimmed Kiosk Booth.png",
+    "name": "كشك حراسة بإطار أخضر عصري",
+    "category": "kiosks",
+    "category_name": "أكشاك حراسة وكبائن",
+    "capacity": "120×120 سم",
+    "type": "كابينة أمنية",
+    "material": "فايبر جلاس متعدد الطبقات",
+    "features": [
+      "تصميم فريد بألوان مبهجة ومميزة",
+      "متانة قصوى ضد الصدمات",
+      "سهل الغسيل والتنظيف"
+    ],
+    "recommended_for": "الحدائق والمنتجعات والمشاريع البيئية والنوادي",
+    "image": "assets/images/optimized/kiosk-green.webp"
+  },
+  {
+    "id": "cabin-wc",
+    "file": "Branded White Portable WC Cabin.png",
+    "name": "كابينة حمام متنقلة مجهزة بالكامل (Portable WC)",
+    "category": "cabins",
+    "category_name": "حمامات متنقلة وكبائن",
+    "capacity": "كابينة فردية مجهزة",
+    "type": "حمام متنقل فايبر جلاس / بولي إيثيلين",
+    "material": "بولي إيثيلين نقي مضاد للبكتيريا ومقاوم للمنظفات الكيماوية",
+    "features": [
+      "مجهز بقاعدة حمام ومغسلة وحنفية",
+      "خزان مياه علوي وخزان صرف صحي مدمج",
+      "فتحات تهوية وتصميم يمنع الروائح",
+      "جاهز للتوصيل والتشغيل المباشر"
+    ],
+    "recommended_for": "مواقع البناء والإنشاءات، الحفلات، والمواقع الصحراوية والنائية",
+    "image": "assets/images/optimized/cabin-wc.webp"
+  },
+  {
+    "id": "barrier-orange",
+    "file": "Branded Orange Road Barriers.png",
+    "name": "حواجز طرق نيوجيرسي برتقالية تحذيرية",
+    "category": "barriers",
+    "category_name": "حواجز طرق وسلامة مرورية",
+    "capacity": "طول 1 متر / 1.5 متر / 2 متر",
+    "type": "حاجز خرساني بلاستيكي نيوجيرسي",
+    "material": "بولي إيثيلين عالي الكثافة ممتص للصدمات",
+    "features": [
+      "قابل للتعبئة بالماء أو الرمال لزيادة الوزن والثبات",
+      "ألوان فسفورية عالية الوضوح ليلاً ونهاراً",
+      "نظام تعشيق وتوصيل متسلسل لإنشاء جدار واقٍ",
+      "مقاوم للشمس ولا يبهت لونه"
+    ],
+    "recommended_for": "تنظيم حركة المرور، الطرق السريعة، مواقع الحفر والبناء، والتحويلات",
+    "image": "assets/images/optimized/barrier-orange.webp"
+  },
+  {
+    "id": "barrier-blue",
+    "file": "Branded Blue Road Barriers Row.png",
+    "name": "حواجز طرق نيوجيرسي زرقاء نظامية",
+    "category": "barriers",
+    "category_name": "حواجز طرق وسلامة مرورية",
+    "capacity": "طول 1 متر / 1.5 متر",
+    "type": "حاجز مروري بولي إيثيلين",
+    "material": "بولي إيثيلين متين معالج ضد الصدمات",
+    "features": [
+      "تصميم مدروس لامتصاص الصدمات بمرونة",
+      "تفريغ وملء سهل وسريع",
+      "سهولة النقل والتخزين بالتكديس"
+    ],
+    "recommended_for": "مواقف السيارات، الفنادق، المعارض، والمنشآت التجارية",
+    "image": "assets/images/optimized/barrier-blue.webp"
+  }
+]
